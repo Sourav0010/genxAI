@@ -1,0 +1,340 @@
+@font-face {
+   font-family: 'CreatoDisplay';
+   src: url('./fonts/CreatoDisplay-Regular.otf') format('opentype');
+}
+@font-face {
+   font-family: 'CreatoDisplayMedium';
+   src: url('./fonts/CreatoDisplay-Medium.otf') format('opentype');
+}
+@font-face {
+   font-family: 'CreatoDisplayBold';
+   src: url('./fonts/CreatoDisplay-Bold.otf') format('opentype');
+}
+@font-face {
+   font-family: 'CreatoDisplayBlack';
+   src: url('./fonts/CreatoDisplay-Black.otf') format('opentype');
+}
+@font-face {
+   font-family: 'CreatoDisplayLight';
+   src: url('./fonts/CreatoDisplay-Light.otf') format('opentype');
+}
+
+body {
+   font-family: 'CreatoDisplay', sans-serif;
+   margin: 0;
+   height: 100vh;
+   background-color: black;
+   background-image: linear-gradient(#161616 1px, transparent 1px),
+      linear-gradient(90deg, #161616 1px, transparent 1px);
+   background-size: 5rem 5rem;
+   color: #fff;
+   overflow-x: hidden;
+}
+
+/* Navigation */
+
+.nav-logo {
+   width: 5rem;
+   height: 5rem;
+   margin: 0;
+}
+.nav-logo img {
+   width: 100%;
+   height: 100%;
+}
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 2rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   z-index: 1000;
+}
+ul {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+li {
+   margin-right: 1rem;
+}
+a {
+   text-decoration: none;
+   color: rgb(143, 143, 143);
+}
+.hamburger {
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+   cursor: pointer;
+   margin-right: 5rem;
+   padding: 1rem;
+}
+
+.line {
+   width: 2rem;
+   height: 2px;
+   background: linear-gradient(to left, #777777, #ffffff);
+   border-radius: 70%;
+   align-self: flex-start;
+   overflow: hidden;
+}
+
+.line-short {
+   width: 1rem;
+   height: 2px;
+   border-radius: 20%;
+   align-self: flex-end;
+   margin-left: 2px;
+}
+
+.line-shorter {
+   width: 1rem;
+   height: 2px;
+   border-radius: 20%;
+   align-self: flex-start;
+}
+
+/* Hero Section */
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-image {
+   width: 57vw;
+   height: 75vh;
+}
+
+.hero-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.hero-text {
+   padding: 5rem;
+   width: 57vw;
+   height: 85vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   text-align: left;
+   font-family: 'CreatoDisplayLight', sans-serif;
+   position: relative;
+}
+
+.hero-svg {
+   position: absolute;
+   top: 27%;
+   left: 50%;
+}
+
+.hero-svg2 {
+   position: absolute;
+   top: 26%;
+   left: 52.5%;
+}
+
+.hero-title {
+   font-size: 4rem;
+   margin-bottom: 1rem;
+}
+
+.highlight {
+   background: linear-gradient(to right, #525252, #ffffff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.highlight2 {
+   background: linear-gradient(to left, #525252, #ffffff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.special {
+   background: linear-gradient(to right, #f9bc35, #f05d74);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-family: 'CreatoDisplayBold', sans-serif;
+}
+
+.hero-para {
+   font-size: 1rem;
+   margin-bottom: 1rem;
+   color: #525252;
+   font-family: 'CreatoDisplay', sans-serif;
+}
+
+.overlay1 {
+   position: absolute;
+   top: -60%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 60rem;
+   height: 60rem;
+   background: radial-gradient(
+      circle,
+      rgba(43, 43, 43, 0.745) 0%,
+      rgba(43, 43, 43, 0.745) 0%,
+      rgba(0, 0, 0, 0) 74%
+   );
+   border-radius: 100%;
+}
+.overlay2 {
+   position: absolute;
+   bottom: -60%;
+   left: -10%;
+   transform: translate(-50%, 10%);
+   width: 60rem;
+   height: 60rem;
+   background: radial-gradient(
+      circle,
+      rgba(43, 43, 43, 0.745) 0%,
+      rgba(43, 43, 43, 0.745) 0%,
+      rgba(0, 0, 0, 0) 74%
+   );
+   border-radius: 100%;
+}
+.overlay3 {
+   position: absolute;
+   bottom: -60%;
+   left: 50%;
+   transform: translate(-50%, 10%);
+   width: 30rem;
+   height: 30rem;
+   background: radial-gradient(
+      circle,
+      rgba(43, 43, 43, 0.745) 0%,
+      rgba(43, 43, 43, 0.745) 0%,
+      rgba(0, 0, 0, 0) 74%
+   );
+   border-radius: 0% 0% 50% 50%;
+}
+
+.overlay4 {
+   position: absolute;
+   top: 80.9%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 30vw;
+   height: 20rem;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.745), rgba(0, 0, 0, 0));
+   border-bottom: #0c0c0c 1px solid;
+   border-radius: 50% 50% 0% 0%;
+}
+
+.hero-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: transparent;
+   border: 2px solid #0c0c0c;
+   overflow: hidden;
+   border-radius: 1.5rem;
+   gap: 1rem;
+   cursor: pointer;
+}
+
+.hero-btn span {
+   background: linear-gradient(to right, #f9bc35, #f05d74);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-family: 'CreatoDisplayBold', sans-serif;
+   font-size: 0.7rem;
+   padding-left: 0.3rem;
+   cursor: pointer;
+}
+.hero-btn button {
+   background: #0c0c0c;
+   border: none;
+   color: #505050;
+   font-family: 'CreatoDisplay', sans-serif;
+   font-size: 0.7rem;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   border-radius: 1.5rem;
+   cursor: pointer;
+}
+.contact {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+   margin-top: 10rem;
+   color: white;
+}
+.contact h2 {
+   text-align: center;
+}
+
+.contact-img {
+   width: 20rem;
+   height: 15rem;
+   transform: translateY(-40%);
+}
+
+.contact-img img {
+   width: 100%;
+   height: 100%;
+}
+
+.contact-logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 2rem;
+   height: 2rem;
+   margin: 0;
+   background-color: white;
+   border-radius: 100%;
+   transform: translateY(-420%);
+}
+.contact-logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.contact-logos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 700px) {
+   /* Navigation */
+   ul {
+      display: none;
+   }
+   .nav-logo {
+      width: 3rem;
+      height: 3rem;
+   }
+   nav {
+      padding: 0.5rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+   }
+   .hamburger {
+      margin-right: 1rem;
+   }
+   .line {
+      width: 1rem;
+   }
+   /* Hero Section */
+}
