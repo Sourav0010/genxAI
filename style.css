@@ -345,9 +345,6 @@ main {
 @media only screen and (max-width: 600px) {
    /* Navigation */
 
-   ul {
-      display: none;
-   }
    .nav-logo {
       width: 3rem;
       height: 3rem;
@@ -388,7 +385,7 @@ main {
       max-width: 40rem;
    }
    .hero-content {
-      transform: translateY(250%);
+      transform: translateY(290%);
       display: flex;
       justify-content: center;
       align-items: center;
