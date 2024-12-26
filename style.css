@@ -385,7 +385,7 @@ main {
       max-width: 40rem;
    }
    .hero-content {
-      transform: translateY(290%);
+      transform: translateY(340%);
       display: flex;
       justify-content: center;
       align-items: center;
