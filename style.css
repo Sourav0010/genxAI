@@ -47,12 +47,15 @@ nav {
    align-items: center;
    justify-content: space-between;
    padding: 0 2rem;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
+}
+
+header {
+   position: fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
    z-index: 1000;
 }
+
 ul {
    display: flex;
    list-style: none;
@@ -71,7 +74,6 @@ a {
    flex-direction: column;
    gap: 0.3rem;
    cursor: pointer;
-   margin-right: 5rem;
    padding: 1rem;
 }
 
@@ -116,6 +118,20 @@ main {
    width: 100%;
    height: 100%;
    object-fit: contain;
+}
+
+.hero-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.hero-btn {
+   align-self: flex-start;
+}
+.hero-para {
+   max-width: 30rem;
 }
 
 .hero-text {
@@ -298,7 +314,6 @@ main {
    margin: 0;
    background-color: white;
    border-radius: 100%;
-   transform: translateY(-420%);
 }
 .contact-logo img {
    width: 100%;
@@ -313,10 +328,23 @@ main {
    gap: 1rem;
 }
 
+.social-media {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transform: translateY(-120%);
+}
+.social-media p {
+   font-size: 0.7rem;
+   color: #777777;
+}
+
 /* Media Query */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
    /* Navigation */
+
    ul {
       display: none;
    }
@@ -324,17 +352,99 @@ main {
       width: 3rem;
       height: 3rem;
    }
-   nav {
+
+   header {
       padding: 0.5rem 1rem;
-      position: fixed;
-      top: 0;
-      left: 0;
    }
-   .hamburger {
-      margin-right: 1rem;
-   }
+
    .line {
       width: 1rem;
    }
    /* Hero Section */
+   main {
+      flex-direction: column;
+      height: auto;
+   }
+   .hero-text {
+      padding: 1rem;
+      justify-items: center;
+      align-items: center;
+   }
+
+   .hero-title {
+      font-size: 2.5rem;
+   }
+
+   .hero-image {
+      width: 100%;
+      height: 50vh;
+      position: absolute;
+      top: 57%;
+      left: 0%;
+   }
+   .hero-para {
+      font-size: 0.7rem;
+      margin-top: 2rem;
+      max-width: 40rem;
+   }
+   .hero-content {
+      transform: translateY(250%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .contact {
+      transform: translateY(80%);
+   }
+   .hero-svg {
+      top: 20%;
+      left: 90%;
+      font-size: 2rem;
+   }
+   .hero-svg2 {
+      top: 19%;
+      left: 97%;
+      font-size: 1rem;
+   }
+   .hero-btn span,
+   .hero-btn button {
+      font-size: 0.5rem;
+   }
+
+   /* Contact Section */
+   .contact-img {
+      width: 10rem;
+      height: 7.5rem;
+      transform: translateY(-30%);
+   }
+   .contact-logo {
+      width: 1rem;
+      height: 1rem;
+   }
+   .contact-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .contact-text h2 {
+      font-size: 0.5rem;
+   }
+   .social-media p {
+      font-size: 0.4rem;
+   }
+
+   .overlay2,
+   .overlay3,
+   .overlay4 {
+      display: none;
+   }
+
+   .overlay1 {
+      top: 0;
+      right: 0;
+      width: 20rem;
+      height: 20rem;
+      display: none;
+   }
 }
