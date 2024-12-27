@@ -24,8 +24,8 @@ body {
    margin: 0;
    height: 100vh;
    background-color: #01040d;
-   background-image: linear-gradient(#0f0f0f 1px, transparent 1px),
-      linear-gradient(90deg, #0f0f0f 1px, transparent 1px);
+   background-image: linear-gradient(#02081b93 1px, transparent 1px),
+      linear-gradient(90deg, #02081b93 1px, transparent 1px);
    background-size: 5rem 5rem;
    color: #fff;
    overflow-x: hidden;
@@ -128,7 +128,7 @@ main {
 }
 
 .hero-para {
-   max-width: 30rem;
+   max-width: 40rem;
 }
 
 .hero-text {
@@ -157,7 +157,7 @@ main {
 }
 
 .hero-title {
-   font-size: 4rem;
+   font-size: 3.1rem;
    margin-bottom: 1rem;
 }
 
@@ -315,19 +315,25 @@ main {
    }
    .hero-text {
       padding: 0rem;
+      width: 85vw;
       justify-items: center;
       align-items: center;
    }
 
    .hero-title {
-      font-size: 2.5rem;
+      font-size: 1.6rem;
+      text-align: center;
+   }
+
+   main {
+      transform: translateY(-20%);
    }
 
    .hero-image {
       width: 100%;
       height: 50vh;
       position: absolute;
-      top: 57%;
+      top: 44%;
       left: 0%;
    }
    .hero-para {
@@ -341,7 +347,7 @@ main {
       align-items: center;
    }
    .contact {
-      transform: translateY(80%);
+      transform: translateY(30%);
    }
    .hero-svg {
       top: 20%;
